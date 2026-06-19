@@ -1,10 +1,15 @@
 # 🍽️ Evanston Restaurant Recommender
 
-An end-to-end recommendation system built on real restaurant review data from Evanston, IL. This project demonstrates how modern recommendation techniques — from popularity scoring to NLP-powered sentiment modeling — can be applied to drive user engagement and increase conversion in a review or dining platform.
+An end-to-end recommendation system built on restaurant review data from Evanston, IL to help users discover restaurants aligned with their preferences. The project combines popularity-based recommendation, sentiment modeling, and review analysis to show how data-driven ranking systems can improve user experience on dining or review platforms.
 
 ## Business motivation
 
-Recommender systems are a core driver of revenue in consumer platforms. Amazon attributes ~35% of revenue to recommendations; Netflix credits them with $1B+ in annual retention value. This project applies the same methods — collaborative filtering, matrix factorization, and text embeddings — to a restaurant review dataset, showing how similar infrastructure can improve user experience and reduce churn in food-tech or local discovery applications.
+Recommender systems are a core driver of revenue in consumer platforms. They help users identify options they are more likely to enjoy from large catalogs of options, reducing decision fatigue and increasing engagement. Commonly cited estimates suggest that Amazon attributes roughly 35% of purchases to recommendations, while Netflix has valued its recommendation system at roughly $1B annually through improved subscriber retention.
+
+In this project, I apply the same ideas to a smaller, local setting: restaurant reviews from Evanston, IL. Using content-based filtering, collaborative filtering, and NLP-based sentiment modeling, the system recommends restaurants based on user review patterns and restaurant characteristics. The broader motivation is to understand how recommendation infrastructure can help users discover places they are likely to enjoy, while improving engagement and retention for food-tech or local discovery platforms.
+
+## Data
+Restaurant review data from Evanston, IL (68 restaurants, 1,500 reviews). Sourced from a course project at Northwestern University (STAT 415, Spring 2025). Raw data is not included in this repo.
 
 ## Methods
 
@@ -49,8 +54,7 @@ Recommender systems are a core driver of revenue in consumer platforms. Amazon a
 ```
 ├── notebook_part1.ipynb   # EDA, popularity matching, content-based filtering, NLP similarity
 ├── notebook_part2.ipynb   # Collaborative filtering, SVD, regression models, text embeddings
-└── data/
-    └── RestaurantReviews.xlsx
+
 ```
 
 ## Author
